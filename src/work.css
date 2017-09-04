@@ -1,0 +1,17 @@
+.work>div{
+  /*width:90%;*/
+  max-width: 1000px;
+  margin:0 auto;
+  height:100%;
+}
+.work>div>a{
+  display: block;
+  width: 44%;
+  margin: 10px 3%;
+  float: left;
+  text-align: center;
+}
+.work>div img{
+  height: 180px;
+  width: 100%;
+}

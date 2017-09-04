@@ -1,0 +1,134 @@
+.clearfix:before,
+	.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size:0;
+}
+
+.clearfix { *zoom:1;}
+body{
+  font-size: 14px;
+}
+.my-wrap{
+  display: flex;
+  height: 100vh;
+  flex-direction:column;
+}
+@media (min-width: 769px) {
+  .my-wrap{
+    flex-direction: row;
+  }
+}
+@media (max-width: 400px) {
+  .work>div>a{
+    width: 100%;
+		float: none;
+  }
+	.work>div img{
+	  margin-left: -15px;
+	}
+}
+header,footer{
+  height: 80px;
+  background-color : #00bcd4;
+  flex-shrink: 0;
+  display: flex;
+}
+header{
+  justify-content:space-between;
+  padding: 0 10px;
+  align-items:center;
+  color: #fff;
+}
+footer{
+  align-items: center;
+  text-align: center;
+}
+footer a{
+  flex-basis: 25%;
+  color:#fff;
+  border-right: 1px solid #eee;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #F44336;
+  text-decoration: none;
+}
+footer a:focus{
+  text-decoration: none;
+}
+footer a:last-child{
+  border: none;
+}
+.main{
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+}
+.main>div{
+  flex-grow: 1;
+}
+.blog{
+  display: flex;
+  flex-direction:column;
+}
+.search{
+  flex-shrink: 0;
+}
+.dataList{
+  overflow-y: auto;
+}
+.dataList span{
+	color: red;
+}
+.home-wrap{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+  color: #666;
+  background: url('http://image-1254205806.cosbj.myqcloud.com/timg.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.left-nav{
+  width: 300px;
+  background: #00bcd4;
+	flex-shrink: 0;
+}
+.left-navl{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+.left-navl:hover{
+  background: rgba(0, 0, 0, 0.298039);
+  color: #fff;
+}
+.left-navl:focus{
+  text-decoration: none;
+}
+.left-nav h2{
+  text-align: center;
+  font-size: 22px;
+  padding: 20px 0;
+  color: #fff;
+  border-bottom: 2px solid #ffeb3b;
+}
+.information{
+	flex-direction:column;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+}
+.information>h1{
+  color: #0088d4;
+}
